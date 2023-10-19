@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+/* general decoration*/
 body {
-    background-color: black; /*to be replaced with a 3d render of mine*/
+    background-color: rgb(0, 0, 0); /*to be replaced with something*/
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     color:White;
@@ -21,40 +21,84 @@ ul {
 }
 
 /* nav bar */
-.home {
-    float: left;
-    width: 10%;
-    margin: 0;
-    padding-left: 20%;
-    padding-top: 17px;
-}
-
-.projects {
-    float: left;
-    margin: 0;
-    padding-top: 17px;
-    padding-left: 5%;
-}
-
-.aboutMe {
-    float: left;
-    margin: 0;
-    padding-top: 17px;
-    padding-left: 9%;
-}
-
 .nav-bar {
     background-color: rgb(13, 13, 13);
     width: 100%;
     height: 50px;
 }
 
-/* main container */
+.nav-bar a {
+    transition: color 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-bar a:hover {
+    color: palegreen;
+}
+
+.home {
+    float: left;
+    width: 10%;
+    height: 35px;
+    margin: 0;
+    margin-left: 20%;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: linear-gradient(90deg, rgba(44,200,162,1) 0%, rgb(83, 100, 117) 40%, rgba(14,27,89,1) 100%);
+}
+
+.projects {
+    width: 10%;
+    height: 35px;
+    float: left;
+    margin: 0;
+    margin-top: 7px;
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: rgb(107, 144, 88);
+}
+
+.aboutMe {
+    width: 10%;
+    height: 35px;
+    float: left;
+    margin: 0;
+    margin-top: 7px;
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: rgb(107, 144, 88);
+}
+
+.home:active, .projects:active, .aboutMe:active {
+    transform: scale(0.95);
+}
+
+/* container of the contact me section */
 .contact { 
     padding-top: 10px;
 }
 
-/* container of the contact me paragraph*/
 .pContact { 
     float: left;
     padding-left: 1100px;
@@ -67,13 +111,13 @@ ul {
     padding-top: 5px;
 }
 
+/* container of the twitter and email icon*/
 .twitter {
     float: right;
     margin: 0;
     width: 100px;
 }
 
-/* container of the twitter and email icon*/
 .email {
     float: right;
     margin: 0;
@@ -94,8 +138,12 @@ ul {
 #moreInfo {
     float: left;
     margin: 0;
-    width: 10%;
-    padding-top: 15px;
-    padding-left: 25%;
+    width: 8%;
+    margin-top: 15px;
+    margin-left: 25%;
     color: orange;
+}
+
+#arrowID {
+    margin-top: 5px;
 }
