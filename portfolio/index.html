@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
     <div class="nav-bar">
         <ul>
-            <a href="index.html">
+            <a href="#nav-bar">
                 <div class="home">
                     <li><p id="nav-home" style="color: white;" >Home</p></li>
                 </div>
             </a>
-            <a href="projects.html">
+            <a href="" id="aProjects">
                 <div class="projects">
                    <li><p id="nav-projects">Projects</p></li>
                 </div>
             </a>
-            <a href="aboutMe.html">
+            <a href="">
                 <div class="aboutMe">
                     <li><p id="nav-aboutMe">About Me</p></li>
                 </div>
@@ -28,27 +28,31 @@
         </ul>
     </div>
 
-    <div class="contact">
-        <div class="pContact">
-            <p id="pContactID">Contact me here: </p>
-        </div>
-        <div class="twitter">
-            <a href=""><i class="fab fa-brands fab fa-twitter fa-2x" style="color: #2e86df;"></i></a>
-        </div>
-        <div class="email">
-            <a href=""><i class="fa fa-solid fa fa-envelope fa-2x" style="color: #d31919;"></i></a>
-        </div>
+    <div class="contact">   
+        <ul id="contactUl">
+            <div class="linkedin">
+                <li><a href=""><i class="fab fa-brands fab fa-linkedin fa-3x" style="color: #3700ff;"></i></a></li>
+            </div>
+            <div class="email">
+                <li><a href=""><i class="fa fa-solid fa fa-envelope fa-3x" style="color: #d31919;"></i></a></li>
+            </div>
+            <div class="github">
+                <li><a href=""><i class="fa fa-brands fa fa-square-github fa-3x" style="color: white;"></i></a></li>
+            </div>
+        </ul>
     </div>
 
     <div class="SoftDev">
-        <h1>Lorem Ipsum: Software Developer</h1><br>
-        <h3 id="myDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida egestas dui sit amet ornare.
+        <h1 style="font-weight: 900;">Lorem Ipsum: <br>Software Developer</h1><br>
+        <h3 id="myDescription" style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida egestas dui sit amet ornare.
             Donec molestie sem vitae dolor aliquet.
         </h3>
-        <a href="aboutMe.html" id="linkArrowID">
-            <h4 id="moreInfo">Learn More</h4>
-            <i id="arrowID" class="fa fa-solid fa fa-reply fa fa-flip-horizontal fa-2x" style="color: orange;"></i>
-        </a>       
+        <div class="AboutMeRedirect">
+            <a href="" id="linkArrowID">
+                <h4 id="h4Redirect">About Me</h4>
+                <i id="arrowID" class="fa fa-solid fa fa-reply fa fa-flip-horizontal fa-2x" style="color: rgb(17, 169, 0);"></i>
+            </a>     
+        </div>  
     </div>
 
 </body>

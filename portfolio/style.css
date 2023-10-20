@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /* general decoration*/
 body {
-    background-color: rgb(0, 0, 0); /*to be replaced with something*/
+    background-color: rgb(2, 0, 6);  /* rgb(26, 27, 30), rgb(2, 0, 6)*/
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     color:White;
@@ -20,19 +20,19 @@ ul {
     list-style: none;
 }
 
-/* nav bar */
+/* Nav Bar */
 .nav-bar {
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(13, 13, 13); /* also to be replaced idk*/ /* rgb(13, 13, 13) */
     width: 100%;
     height: 50px;
 }
 
-.nav-bar a {
+.nav-bar p {
     transition: color 0.4s;
     transition-timing-function: ease-in-out;
 }
 
-.nav-bar a:hover {
+.nav-bar p:hover {
     color: palegreen;
 }
 
@@ -46,8 +46,16 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s, transform 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.home:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100px;
-    background: linear-gradient(90deg, rgba(44,200,162,1) 0%, rgb(83, 100, 117) 40%, rgba(14,27,89,1) 100%);
+    background-color: rgb(109, 83, 31);
 }
 
 .projects {
@@ -60,6 +68,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s, transform 0s;
+    transition-timing-function: ease-in-out;
 }
 
 .projects:hover {
@@ -67,7 +77,7 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background-color: rgb(107, 144, 88);
+    background-color: rgb(31, 54, 77);
 }
 
 .aboutMe {
@@ -80,6 +90,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s, transform 0s;
+    transition-timing-function: ease-in-out;
 }
 
 .aboutMe:hover {
@@ -87,61 +99,90 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background-color: rgb(107, 144, 88);
+    background-color: rgb(35, 67, 19);
 }
 
 .home:active, .projects:active, .aboutMe:active {
     transform: scale(0.95);
 }
 
-/* container of the contact me section */
+
+/* Container of the contact me section */
 .contact { 
-    padding-top: 10px;
-}
-
-.pContact { 
-    float: left;
-    padding-left: 1100px;
-    margin: 0;
-    width: 10%;
-    height: 50px;
-}
-
-#pContactID {
-    padding-top: 5px;
-}
-
-/* container of the twitter and email icon*/
-.twitter {
+    width: 80px;
     float: right;
+    padding-top: 100px;
+    padding-bottom: 268px;
+    background-color: rgb(13, 13, 13);
+}
+
+.contact li {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contactUl {
+    float: right;
+    align-items: center;
+    width: 80px;
+    padding: 0;
     margin: 0;
-    width: 100px;
+    background-color: rgb(13, 13, 13);
+}
+
+/* Container of the linkedin, email and github icon*/
+.linkedin {
+    float: right;
+    width: 60px;
+    margin: 0; 
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
 .email {
     float: right;
+    width: 60px;
     margin: 0;
-    width: 90px;
+    margin-top: 40px;
+    margin-right: 3px;
+}
+
+.github {
+    float: right;
+    width: 60px;
+    margin: 0;
+    margin-top: 40px;
 }
 
 /* Container of the 2 big phrases in the middle of the website*/
 .SoftDev {  
-    padding-top: 65px;
-    padding-left: 100px;
+    float: left;
+    width: 55%;
+    margin-top: 70px;
+    margin-left: 110px;
+}
+
+.SoftDev h1 {
+    width: 600px;
 }
 
 #myDescription {
-    margin-left: 30px;
-    width: 50%;
+    margin-left: 50px;
+    width: 700px;
 }
 
-#moreInfo {
+.AboutMeRedirect {
+    width: 30%;
+    margin-left: 40%;
+}
+
+#h4Redirect {
     float: left;
     margin: 0;
-    width: 8%;
+    width: 40%;
     margin-top: 15px;
     margin-left: 25%;
-    color: orange;
+    color: rgb(17, 169, 0);
 }
 
 #arrowID {
