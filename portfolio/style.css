@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     color:White;
+    overflow-x: hidden;
 }
 
 p {
@@ -22,9 +23,12 @@ ul {
 
 /* Nav Bar */
 .nav-bar {
-    background-color: rgb(13, 13, 13); /* also to be replaced idk*/ /* rgb(13, 13, 13) */
+    background-color: rgb(13, 13, 13); /* to be replaced */ /* rgb(13, 13, 13) */
     width: 100%;
     height: 50px;
+    z-index: 100;
+    position: relative;
+    box-shadow: 2px 2px 20px rgb(255 0 0 / 30%), 2px 2px 2px rgb(255 0 0 / 30%);
 }
 
 .nav-bar p {
@@ -114,6 +118,7 @@ ul {
     padding-top: 100px;
     padding-bottom: 268px;
     background-color: rgb(13, 13, 13);
+    box-shadow: -1px -10px 30px rgb(255 0 0 / 30%), -10px 0 5px -7px rgb(255 0 0 / 30%);
 }
 
 .contact li {
@@ -179,9 +184,9 @@ ul {
 #h4Redirect {
     float: left;
     margin: 0;
-    width: 40%;
+    width: 60%;
     margin-top: 15px;
-    margin-left: 25%;
+    margin-left: 22%;
     color: rgb(17, 169, 0);
 }
 
