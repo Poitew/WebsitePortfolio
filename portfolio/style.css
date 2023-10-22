@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     margin: 0;
 }
@@ -158,14 +162,14 @@ ul {
 }
 
 /* Container of the 2 big phrases in the middle of the website*/
-.SoftDev {  
+.Presentation {  
     float: left;
     width: 55%;
     margin-top: 140px;
     margin-left: 110px;
 }
 
-.SoftDev h1 {
+.Presentation h1 {
     width: 600px;
 }
 
@@ -205,7 +209,7 @@ ul {
 .photo {
     width: 20%;
     height: 100%;
-    background-color: blue;
+    background-color: rgb(45, 39, 39);
     float: left;
     margin-bottom: 40px;
     margin-left: 50px;
@@ -228,11 +232,28 @@ ul {
 }
 
 /* Skill section*/
-.mySkills {
+.web-dev {
     float: left;
-    width: 50%;
-    margin-left: 50px;
+    width: 90px;
+    margin-left: 110px;
     margin-top: 20px;
-    color: rgb(6, 130, 6);
-    font-weight: 600;
+    display: grid;
+    row-gap: 20px;
+}
+
+.softwareDev {
+    float: left;
+    width: 90px;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.softwareDev i {
+    margin-top: 15px;
+}
+
+.softwareDev img {
+    width: 72px;
+    height: auto;
+    margin-top: 20px;
 }

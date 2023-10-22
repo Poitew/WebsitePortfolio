@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://languages.abranhe.com/logos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="nav-barID">
         <div class="nav-bar">
             <ul>
-                <a href="#nav-bar">
+                <a href="#nav-barID">
                     <div class="home">
                         <li><p id="nav-home" style="color: white;" >Home</p></li>
                     </div>
@@ -44,7 +45,7 @@
         </ul>
     </div>
 
-    <div class="SoftDev">
+    <div class="Presentation">
         <h1 style="font-size: 2.2rem;">Lorem Ipsum: <br><span style="font-weight: 900; font-size: 3rem;">Software Developer</span></h1><br>
         <h3 id="myDescription" style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida egestas dui sit amet ornare.
             Donec molestie sem vitae dolor aliquet.
@@ -71,7 +72,17 @@
     </div>
 
     <div class="mySkills">
-        <p>Throughout my journey I have accumulated various skills, here they are!</p>
+        <div class="web-dev">
+            <p>Web Development</p>
+            <i class="programming lang-html fa-3x"></i>
+            <i class="programming lang-css fa-2x" style="margin-left: 10px;"></i>
+            <i class="programming lang-javascript fa-2x" style="margin-left: 8px; margin-bottom: 20px;"></i> 
+        </div>
+        <div class="softwareDev">
+            <p>Software Development</p>
+            <i class="programming lang-cpp fa-3x"></i>
+            <img src="images/qt.png" alt="Qt framework">
+        </div>
     </div>
 
 </body>
