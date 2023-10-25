@@ -26,6 +26,11 @@ ul {
     list-style: none;
 }
 
+hr {
+    display: inline-block;
+    width: 40%;
+}
+
 /* Nav Bar */
 .nav-bar {
     background-color: rgb(13, 13, 13); /* to be replaced */ /* rgb(13, 13, 13) */
@@ -66,7 +71,7 @@ ul {
     background-color: rgb(109, 83, 31);
 }
 
-.projects {
+.projectsBar {
     width: 10%;
     height: 35px;
     float: left;
@@ -79,7 +84,7 @@ ul {
     transition-timing-function: ease-in-out;
 }
 
-.projects:hover {
+.projectsBar:hover {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,8 +122,8 @@ ul {
 .contact { 
     width: 80px;
     float: right;
-    padding-top: 120px;
-    padding-bottom: 314px;
+    padding-top: 140px;
+    padding-bottom: 293px;
     background-color: rgb(13, 13, 13);
     box-shadow: -1px -10px 30px rgb(255 0 0 / 30%), -10px 0 5px -7px rgb(255 0 0 / 30%);
 }
@@ -215,9 +220,8 @@ ul {
 .photo {
     width: 20%;
     height: 100%;
-    background-color: rgb(45, 39, 39);
+    background-color: rgb(23, 21, 21);
     float: left;
-    margin-bottom: 40px;
     margin-left: 50px;
 }
 
@@ -241,8 +245,8 @@ ul {
 .mySkills {
     float: left;
     width: 100%;
-    margin-top: 30px;
-    height: 400px;
+    margin-top: 25px;
+    height: 325px;
 }
 
 .web-dev {
@@ -281,4 +285,24 @@ ul {
 .tools p {
     margin-left: 10px;
     margin-bottom: 32px;
+}
+
+/* projects section*/
+.projectsTitle {
+    float: left;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-left: 6.6%;
+}
+
+.card {
+    width: 300px;
+    height: 340px;
+    float: left;
+}
+
+.card img { 
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
 }
