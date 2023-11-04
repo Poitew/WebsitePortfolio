@@ -4,60 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="shortcut icon" href="images/c-plusplus.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://languages.abranhe.com/logos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Fixed header / nav bar -->
-    <header id="nav-barID">
-        <div class="nav-bar">
-            <ul>
-                <a href="#nav-barID">
-                    <div class="home">
-                        <li><p id="nav-home" style="color: white;" >Home</p></li>
-                    </div>
-                </a>
+    <!-- header - nav-bar -->
+    <header>
+        <div id="linkWrapper">
+            <a href="#homeID">
+                <div class="home">
+                    <p id="nav-home">Home</p>
+                </div>
+            </a>
 
-                <a href="#aboutMeID">
-                    <div class="aboutMe">
-                        <li><p id="nav-aboutMe">About Me</p></li>
-                    </div>
-                </a>
+            <a href="#aboutMeID">
+                <div class="aboutMe">
+                    <p id="nav-aboutMe">About Me</p>
+                </div>
+            </a>
 
-                <a href="#projectID">
-                    <div class="projectsBar">
-                       <li><p id="nav-projects">Projects</p></li>
-                    </div>
-                </a>
-            </ul>
+            <a href="#projectID">
+                <div class="projectsBar">
+                    <p id="nav-projects">Projects</p>
+                </div>
+            </a>
+            <p id="myNameHeader">Lorem Ipsum</p>
         </div>
     </header>
 
     <!--  contact me section -->
-    <div class="contact">   <!-- display the background -->
-        <ul id="contactUl">     <!-- actual container of the icons -->
+    <aside id="homeID">   <!-- display the background -->
+        <div id="linkContact">     <!-- actual container of the icons -->
             <div class="linkedin">
-                <li><a href=""><i class="fab fa-brands fab fa-linkedin fa-3x" style="color: #3700ff;"></i></a></li>
+                <a href=""><i class="fab fa-brands fab fa-linkedin fa-3x" style="color: #3700ff;"></i></a>
             </div>
 
             <div class="email">
-                <li><a href="mailto:"><i class="fa fa-solid fa fa-envelope fa-3x" style="color: #d31919;"></i></a></li>
+                <a href="mailto:"><i class="fa fa-solid fa fa-envelope fa-3x" style="color: #d31919;"></i></a>
             </div>
 
             <div class="github">
-                <li><a href="https://github.com/Poitew" target="_blank"><i class="fa fa-brands fa fa-square-github fa-3x" style="color: white;"></i></a></li>
+                <a href="https://github.com/Poitew" target="_blank"><i class="fa fa-brands fa fa-github fa-3x" style="color: white;"></i></a>
             </div>
-        </ul>
-    </div>
+        </div>
+    </aside>
 
     <!-- brief presentation section -->
     <div class="Presentation">
         <h1 style="font-size: 2.2rem;">Lorem Ipsum: <br>
-            <span style="font-weight: 900; font-size: 3rem; width: 800px ; display: flex;"> Web and Software Developer</span>
+            <span id="spanJob"> Front End and <br>  Software Developer</span>
         </h1><br>
 
-        <h3 id="myDescription" style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida egestas dui sit amet ornare.
+        <h3 id="myDescription" style="font-weight: 300;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida egestas dui sit amet ornare.
             Donec molestie sem vitae dolor aliquet.
         </h3>
 
@@ -74,7 +74,7 @@
     <!-- description section --> <!-- don't like this section at all, needs to be changed -->
     <div class="aboutMeSection">
         <div class="description">
-            <h2>Background! &#9997</h2><br> <!-- more detailed presentation of me -->
+            <h2>Background!</h2><br> <!-- more detailed presentation of me -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tincidunt urna. Donec sollicitudin finibus justo ut volutpat.
             In hac habitasse platea dictumst. Quisque ultricies quis sapien varius suscipit. Cras facilisis magna et risus faucibus, vel suscipit risus consectetur. Nam lacinia nisi non accumsan gravida. Cras at arcu sed dui fringilla porttitor.
             Nullam facilisis orci vel arcu tempus, vel aliquam quam blandit. Suspendisse vel libero a est malesuada molestie vitae sed turpis. Praesent porta, ex eget congue elementum, velit risus elementum justo, eget porta velit massa ac lacus. Proin justo elit, feugiat vel metus sit amet, condimentum iaculis felis.
@@ -85,22 +85,23 @@
     <!-- section for all my skills -->
     <div class="mySkills">
         <div class="web-dev">
-            <p>Web Development</p>
+            <p style="margin-left: 45px;">Web Development</p>
             <img src="images/html-5.svg" style="width: 50px; margin-left: 10px;" alt="html5">
             <img src="images/css-3_official.svg" style="width: 50px; margin-left: 10px;" alt="css3">
             <img src="images/javascript.svg" style=" width:50px; margin-left: 8px; margin-bottom: 20px;" alt="js">
+            
         </div>
-
+            <img src="images/react.svg" id="reactjs"  alt="reactjs"> <!-- terrible but it work-->
         <div class="softwareDev">
             <p>Software Development</p>
-            <img src="images/c-plusplus.svg" style="width:60px; margin-top: 5px; margin-left: 6px;" alt="cpp20">
-            <img src="images/qt.svg" alt="qt framework">
+            <img src="images/c-plusplus.svg" style="width:60px; margin-top: 5px; margin-left: 11px;" alt="cpp20">
+            <img src="images/qt.svg" style="margin-left: 5px;" alt="qt framework">
         </div>
 
         <div class="tools">
             <p>Tools</p>
             <i class="fa-brands fa-github fa-4x" style="color: #ffffff;"></i>
-            <img src="images/visual-studio-code.svg" alt="VS code" style="width:60px;">
+            <img src="images/visual-studio-code.svg" alt="VS code" style="width:55px;">
         </div>
     </div>
 

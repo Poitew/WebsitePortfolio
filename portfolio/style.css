@@ -2,7 +2,7 @@
 
 /* general decoration*/
 body {
-    background-color: rgb(2, 0, 6);  /* rgb(26, 27, 30), rgb(2, 0, 6)*/
+    background-color: rgb(10, 0, 6);  /* rgb(2, 0, 6), rgb(3, 0, 10) */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     color:White;
@@ -28,11 +28,11 @@ ul {
 
 hr {
     display: inline-block;
-    width: 40%;
+    width: 45%;
 }
 
 /* Nav Bar */
-.nav-bar {
+header {
     background-color: rgb(13, 13, 13); /* to be replaced */ /* rgb(13, 13, 13) */
     width: 100%;
     height: 60px;
@@ -41,13 +41,17 @@ hr {
     box-shadow: 2px 2px 20px rgb(255 0 0 / 30%), 2px 2px 2px rgb(255 0 0 / 30%);
 }
 
-.nav-bar p {
+#linkWrapper {
+    margin-top: 13px;
+}
+
+.header p {
     transition: color 0.4s;
     transition-timing-function: ease-in-out;
 }
 
-.nav-bar p:hover {
-    color: palegreen;
+.header p:hover {
+    color: rgb(98, 216, 98);
 }
 
 .home {
@@ -68,7 +72,7 @@ hr {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background-color: rgb(109, 83, 31);
+    background-color: rgb(39, 31, 109);
 }
 
 .projectsBar {
@@ -89,7 +93,7 @@ hr {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background-color: rgb(31, 54, 77);
+    background-color: rgb(17, 39, 60);
 }
 
 .aboutMe {
@@ -110,16 +114,23 @@ hr {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    background-color: rgb(35, 67, 19);
+    background-color: rgb(59, 12, 77);
 }
 
 .home:active, .projectsBar:active, .aboutMe:active {
     transform: scale(0.95);
 }
 
+#myNameHeader {
+    float: right;
+    width: 200px;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
 
 /* Container of the contact me section */
-.contact { 
+aside { 
     width: 80px;
     float: right;
     padding-top: 140px;
@@ -128,12 +139,12 @@ hr {
     box-shadow: -1px -10px 30px rgb(255 0 0 / 30%), -10px 0 5px -7px rgb(255 0 0 / 30%);
 }
 
-.contact li {
+aside li {
     flex-direction: column;
     align-items: flex-end;
 }
 
-#contactUl {
+#linkContact {
     float: right;
     align-items: center;
     width: 80px;
@@ -148,6 +159,7 @@ hr {
     width: 60px;
     margin: 0; 
     margin-left: 20px;
+    margin-right: 1px;
     margin-top: 50px;
 }
 
@@ -164,6 +176,7 @@ hr {
     width: 60px;
     margin: 0;
     margin-top: 40px;
+    margin-right: 1px;
 }
 
 /* Container of the my presentation in the middle of the website*/
@@ -171,11 +184,18 @@ hr {
     float: left;
     width: 55%;
     margin-top: 140px;
-    margin-left: 110px;
+    margin-left: 130px;
 }
 
 .Presentation h1 {
     width: 600px;
+}
+
+#spanJob {
+    font-weight: 900;
+    font-size: 3rem;
+    width: 800px; 
+    display: flex;
 }
 
 #myDescription {
@@ -243,7 +263,7 @@ hr {
     width: 100%;
     margin-top: 25px;
     height: 325px;
-    margin-bottom: 90px;
+    margin-bottom: 150px;
 }
 
 .web-dev {
@@ -255,10 +275,17 @@ hr {
     row-gap: 20px;
 }
 
+#reactjs {
+    width: 60px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 35px;
+}
+
 .softwareDev {
     float: left;
     width: 90px;
-    margin-left: 140px;
+    margin-left: 105px;
     margin-top: 20px;
     display: grid;
     row-gap: 20px;
@@ -289,7 +316,7 @@ hr {
 /* projects section*/
 #projectID {
     position: absolute;
-    margin-top: 1340px;
+    margin-top: 1410px;
     z-index: -10;
 }
 
@@ -303,7 +330,7 @@ hr {
     float: left;
     width: 100%;
     font-size: 1.3rem;
-    margin-left: 6.6%;
+    margin-left: 1.7%;
 }
 
 .snake {
