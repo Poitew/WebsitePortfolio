@@ -43,6 +43,7 @@ header {
 
 #linkWrapper {
     margin-top: 17px;
+    height: 100%;
 }
 
 .header p {
@@ -179,7 +180,21 @@ aside li {
     margin-right: 1px;
 }
 
-/* Container of the my presentation in the middle of the website*/
+/* vertical hr with the cv */
+.cvWrapper {
+    position: fixed;
+    margin-top: 500px;
+    margin-left: 89%;
+}
+
+.verticalHr {
+    border-left: solid;
+    height: 150px;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+/* Container of the presentation in the middle of the website*/
 .Presentation {  
     float: left;
     width: 55%;
@@ -249,7 +264,7 @@ aside li {
 }
 
 .description p {
-    width: 90%;
+    width: 85%;
     margin-left: 50px;
     margin-top: 35px;
     float: left;
@@ -314,8 +329,9 @@ aside li {
 }
 
 .tools img {
-    width:50px;
-    margin-top:5px;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 4px;
 }
 
 /* projects section*/
