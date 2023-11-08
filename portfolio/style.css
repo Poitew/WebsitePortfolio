@@ -194,6 +194,17 @@ aside li {
     margin-top: 10px;
 }
 
+#cvParagraph {
+    position: fixed;
+    width: 70px;
+    margin-top: 627px;
+    margin-left: 87%;
+    rotate: 270deg;
+    color: rgb(100, 145, 174);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+
 /* Container of the presentation in the middle of the website*/
 .Presentation {  
     float: left;
