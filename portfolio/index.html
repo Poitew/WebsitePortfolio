@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio of sickpoitew, software developer">
     <title>sickpoitew portfolio</title>
     <link rel="shortcut icon" href="images/c-plusplus.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -14,19 +15,19 @@
         <div id="linkWrapper">
             <a href="#homeID">
                 <div class="home">
-                    <p id="nav-home">Home</p>
+                    <p>Home</p>
                 </div>
             </a>
 
             <a href="#aboutMeID">
                 <div class="aboutMe">
-                    <p id="nav-aboutMe">About Me</p>
+                    <p>About Me</p>
                 </div>
             </a>
 
             <a href="#projectID">
                 <div class="projectsBar">
-                    <p id="nav-projects">Projects</p>
+                    <p>Projects</p>
                 </div>
             </a>
             <a href="#aboutMeID">
@@ -39,40 +40,42 @@
     <aside id="homeID">   <!-- display the background -->
         <div id="linkContact">     <!-- actual container of the icons -->
             <div class="linkedin">
-                <a href=""><i class="fab fa-brands fab fa-linkedin fa-3x" style="color: #3700ff;"></i></a>
+                <a href=""><i class="fab fa-brands fab fa-linkedin fa-3x"></i></a>
             </div>
 
             <div class="email">
-                <a href="mailto:"><i class="fa fa-solid fa fa-envelope fa-3x" style="color: #d31919;"></i></a>
+                <a href="mailto:"><i class="fa fa-solid fa fa-envelope fa-3x"></i></a>
             </div>
 
             <div class="github">
-                <a href="https://github.com/Poitew" target="_blank"><i class="fa fa-brands fa fa-github fa-3x" style="color: white;"></i></a>
+                <a href="https://github.com/Poitew" rel="noopener noreferrer" target="_blank" class="whiteIcon">
+                    <i class="fa fa-brands fa fa-github fa-3x"></i>
+                </a>
             </div>
         </div>
     </aside>
 
     <p id="cvParagraph">CURRICULUM</p>
     <div class="cvWrapper">
-        <a href="" download="curriculum"><i class="fa-regular fa-newspaper fa-2x"></i></a>
+        <a href="" download="curriculum" class="whiteIcon"><i class="fa-regular fa-newspaper fa-2x"></i></a>
         <div class="verticalHr"></div>
     </div>
 
-    <!-- brief presentation section -->
-    <div class="Presentation">
-        <h1 style="font-size: 2.2rem;">Lorem Ipsum: <br>
-            <span id="spanJob"> Front End and <br>  Software Developer</span>
+    <!-- presentation section -->
+    <div class="presentation">
+        <h1>Lorem Ipsum: <br>
+            <span> Front End and <br>  Software Developer</span>
         </h1><br>
 
-        <h3 id="myDescription" style="font-weight: 300;">
+        <h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida egestas dui sit amet ornare.
             Donec molestie sem vitae dolor aliquet.
         </h3>
 
-        <div class="AboutMeRedirect"> <!-- container for the redirect to the about me section -->
-            <a href="#aboutMeID" id="linkArrowID">
-                <h4 id="h4Redirect">Get to know me!</h4>
-                <i id="arrowID" class="fa fa-solid fa fa-reply fa fa-flip-horizontal fa-2x" style="color: rgb(17, 169, 0);"></i>
+        <div class="aboutMeRedirect"> <!-- container for the redirect to the about me section -->
+            <a href="#aboutMeID">
+                <h4>Get to know me!</h4>
+                <i class="fa fa-solid fa fa-reply fa fa-flip-horizontal fa-2x"></i>
             </a>     
         </div>  
     </div>
@@ -94,22 +97,22 @@
     <div class="mySkills">
 
         <div class="web-dev">
-            <p style="margin-left: 50px;"><span style="margin-left: 30px;">Web</span> Development</p>
-            <img src="images/html-5.svg" style="width: 50px; margin-left: 10px;" alt="html5">
-            <img src="images/css-3_official.svg" style="width: 50px; margin-left: 10px;" alt="css3">
-            <img src="images/javascript.svg" style=" width:50px; margin-left: 8px; margin-bottom: 20px;" alt="js">
+            <p><span>Web</span> Development</p>
+            <img src="images/html-5.svg" alt="html5" class="htmlCssSkills">
+            <img src="images/css-3_official.svg" alt="css3" class="htmlCssSkills">
+            <img src="images/javascript.svg" alt="js" id="jsSkill">
         </div>
             <img src="images/react.svg" id="reactjs"  alt="reactjs"> <!-- terrible but it work-->
 
         <div class="softwareDev">
-            <p><span style="margin-left: 10px;">Software</span> Development</p>
-            <img src="images/c-plusplus.svg" style="width:60px; margin-top: 5px; margin-left: 14px;" alt="cpp20">
-            <img src="images/qt.svg" style="margin-left: 9px;" alt="qt framework">
+            <p><span>Software</span> Development</p>
+            <img src="images/c-plusplus.svg" alt="cpp20" id="cppSkill">
+            <img src="images/qt.svg" alt="qt framework" id="qtSkill">
         </div>
 
         <div class="tools">
             <p>Tools</p>
-            <i class="fa-brands fa-github fa-4x" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-github fa-4x" class="whiteIcon"></i>
             <img src="images/visual-studio-code.svg" alt="VS code">
         </div>
 
@@ -120,33 +123,32 @@
     <!-- projects section -->
     <div class="projectsTitle">
         <hr style="width: 43%;" />  Projects  <hr style="width: 46%;" />
-        <p style="font-size: 0.9rem;">all projects are open source on GitHub!</p>
+        <p>all projects are open source on GitHub!</p>
     </div>
 
     <!-- actual section with all the projects -->
     <div class="projectsSection"> 
         <div class="snake">
-            <p>Snake Game <br><span style="font-weight: 100; font-size: 15px;">simple snake game made with vanilla javascript</span></p>
-            <hr style="width: 90%; margin-bottom: 10px; margin-left: 10px;">
+            <p>Snake Game <br><span>simple snake game made with vanilla javascript</span></p>
+            <hr>
         
-            <img src="images/html-5.svg" alt="html5" style="width: 50px; margin-left: 5px; margin-right: 15px;">
-            <img src="images/css-3.svg" alt="css3" style="width: 50px; margin-right: 15px;">
-            <img src="images/javascript.svg" alt="js" style="width: 50px; margin-right: 120px; margin-bottom: 5px;"> 
-            <img src="images/visual-studio-code.svg" alt="VS code" style="width: 50px;">
+            <img src="images/html-5.svg" alt="html5" class="htmlCssSnake">
+            <img src="images/css-3.svg" alt="css3" class="htmlCssSnake">
+            <img src="images/javascript.svg" alt="js" id="jsSnake"> 
+            <img src="images/visual-studio-code.svg" alt="VS code" class="vscProjects">
         </div>
     </div>
 
-
-    <!-- footer, need a few changes but it's decent -->
+    <!-- footer-->
     <footer>
         <hr>
-        <p><span style="font-size: 23px;">Got a project in your mind?</span><br>Make it come true with a few clicks, contact me:</p> <br>
+        <p><span>Got a project in your mind?</span><br>Make it come true with a few clicks, contact me:</p> <br>
         <div class="footerContact">
-            <a href="https://github.com/Poitew" target="_blank"><i class="fa fa-brands fa fa-github fa-2x" style="color: white;"></i></a>
-            <a href=""><i class="fab fa-brands fab fa-linkedin fa-2x" id="footerMail" style="color: white; width: 30px;"></i></a>
-            <a href="mailto:"><i class="fa fa-solid fa fa-envelope fa-2x" style="color: white;"></i></a>
+            <a href="https://github.com/Poitew" rel="noopener noreferrer" target="_blank" class="whiteIcon"><i class="fa fa-brands fa fa-github fa-2x"></i></a>
+            <a href="" rel="noopener noreferrer" target="_blank" class="whiteIcon"><i class="fab fa-brands fab fa-linkedin fa-2x" id="footerMail"></i></a>
+            <a href="mailto:" class="whiteIcon"><i class="fa fa-solid fa fa-envelope fa-2x"></i></a>
         </div>
-        <a href="#homeID"><i class="fa-solid fa-up-long fa-3x" style="color: #ffffff;"></i></a><br>
+        <a href="#homeID" class="whiteIcon"><i class="fa-solid fa-up-long fa-3x"></i></a><br>
     </footer>
 
     <script src="script.js"></script>

@@ -51,9 +51,14 @@ document.addEventListener("scroll", () => {
 // PARAGRAPH CHANGER
 
 // constant for the paragraph
-const homeP = document.querySelector("#nav-home");
-const aboutMeP = document.querySelector("#nav-aboutMe");
-const projectsP = document.querySelector("#nav-projects");
+const homeP = document.querySelector(".home");
+const aboutMeP = document.querySelector(".aboutMe");
+const projectsP = document.querySelector(".projectsBar");
+
+// used to make the color display when first loaded into website
+homeP.style.color = "white";
+aboutMeP.style.color = "darkgray";
+projectsP.style.color = "darkgray";
 
 // listener for the scroll events
 window.addEventListener("scroll", () => {
@@ -64,7 +69,7 @@ window.addEventListener("scroll", () => {
         aboutMeP.style.color = "darkgray";
         projectsP.style.color = "darkgray";
     }
-    else if(websitePosition >= 650 && websitePosition <= 1200){
+    else if(websitePosition >= 650 && websitePosition <= 1300){
         homeP.style.color = "darkgray";
         aboutMeP.style.color = "white";
         projectsP.style.color = "darkgray";
