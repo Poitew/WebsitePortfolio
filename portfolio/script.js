@@ -7,7 +7,7 @@ aura.style.width = "50px";
 aura.style.height = "50px";
 aura.style.borderRadius = "50%";
 aura.style.backgroundImage = "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(92,92,125,1) 50%, rgba(0,28,62,1) 100%)";
-aura.style.opacity = "0.2";
+aura.style.opacity = "0.5";
 aura.style.zIndex = "120";
 aura.style.pointerEvents = "none";
 aura.style.transition = "all 0.1s ease-out";
@@ -53,7 +53,7 @@ document.addEventListener("scroll", () => {
 // constant for the paragraph
 const homeP = document.querySelector(".home");
 const aboutMeP = document.querySelector(".aboutMe");
-const projectsP = document.querySelector(".projectsBar");
+const projectsP = document.querySelector(".projectsNavBar");
 
 // used to make the color display when first loaded into website
 homeP.style.color = "white";

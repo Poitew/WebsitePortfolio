@@ -25,10 +25,6 @@ a {
     color: white;
 }
 
-ul {
-    list-style: none;
-}
-
 hr {
     display: inline-block;
     width: 45%;
@@ -63,23 +59,14 @@ header {
     width: 10%;
     height: 35px;
     margin: 0;
-    margin-left: 23%;
+    margin-left: 26%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s, transform 0s;
-    transition-timing-function: ease-in-out;
+    transition: all 1s, transform 0s ease-in-out;
 }
 
-.home:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: rgb(39, 31, 109);
-}
-
-.projectsBar {
+.projectsNavBar {
     width: 10%;
     height: 35px;
     float: left;
@@ -88,16 +75,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s, transform 0s;
-    transition-timing-function: ease-in-out;
-}
-
-.projectsBar:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    background-color: rgb(17, 39, 60);
+    transition: all 1s, transform 0s ease-in-out;
 }
 
 .aboutMe {
@@ -109,19 +87,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s, transform 0s;
-    transition-timing-function: ease-in-out;
+    transition: all 1s, transform 0s ease-in-out;
 }
 
-.aboutMe:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home:hover, .projectsNavBar:hover, .aboutMe:hover {
     border-radius: 100px;
     background-color: rgb(59, 12, 77);
 }
 
-.home:active, .projectsBar:active, .aboutMe:active {
+.home:active, .projectsNavBar:active, .aboutMe:active {
     transform: scale(0.95);
 }
 
@@ -135,20 +109,6 @@ aside {
     box-shadow: 0px 0px 15px 3px rgba(255,0,0,0.77);
 }
 
-aside li {
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-#linkContact {
-    float: right;
-    align-items: center;
-    width: 80px;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(13, 13, 13);
-}
-
 /* Container of the linkedin, email and github icon*/
 .linkedin {
     float: right;
@@ -156,7 +116,7 @@ aside li {
     margin: 0; 
     margin-left: 20px;
     margin-right: 1px;
-    margin-top: 50px;
+    margin-top: 67px;
 }
 
 .linkedin a {
@@ -263,7 +223,7 @@ aside li {
     height: 275px;
     background-color:  rgb(9, 9, 9); /* rgb(13, 13, 13) */
     box-shadow: 0px 0px 15px 3px rgba(0,255,0,0.51);
-    border-radius: 2% 0% 50% 50% / 5% 0% 43% 31%; 
+    border-radius: 4% 0% 65% 40% / 9% 0% 42% 36%;
 }
 
 #aboutMeID {
@@ -319,13 +279,13 @@ aside li {
     margin-left: 10px;
 }
 
-#jsSkill {
+.jsSkill {
     width:50px;
     margin-left: 8px;
     margin-bottom: 20px;
 }
 
-#reactjs {
+.reactjs {
     width: 60px;
     float: left;
     margin-top: 90px;
@@ -345,13 +305,13 @@ aside li {
     margin-left: 10px;
 }
 
-#cppSkill {
+.cppSkill {
     width:60px;
     margin-top: 5px;
     margin-left: 14px;
 }
 
-#qtSkill {
+.qtSkill {
     width: 72px;
     margin-left: 9px;
     height: auto;
@@ -389,14 +349,14 @@ aside li {
     float: left;
 }
 
-.projectsTitle {
+.projectsHeader {
     float: left;
     width: 100%;
     font-size: 1.3rem;
     margin-left: 1.9%;
 }
 
-.projectsTitle p {
+.projectsHeader p {
     font-size: 0.9rem;
 }
 
@@ -410,8 +370,11 @@ aside li {
     background-color: white;
     box-shadow:  0px 0px 13px 8px rgba(32,224,166,0.71);
     border-radius: 5px;
-    transition: transform 0.4s;
-    transition-timing-function: ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+.snake:hover {
+    transform: scale(1.1);
 }
 
 .snake span {
@@ -431,7 +394,7 @@ aside li {
     margin-left: 10px;
 }
 
-#jsSnake {
+.jsSnake {
     width: 50px;
     margin-left: 10px;
     margin-right: 110px;
@@ -449,11 +412,6 @@ aside li {
     margin-top: 3px;
     margin-left: 10px;
 }
-
-.snake:hover {
-    transform: scale(1.1);
-}
-
 
 /* footer */
 footer {
@@ -483,8 +441,7 @@ footer p {
     padding-left: 90px;
 }
 
-#footerMail {
-    margin-left: 50px;
-    margin-right: 50px;
+.footerContact a {
+    margin-right: 30px;
 }
 
