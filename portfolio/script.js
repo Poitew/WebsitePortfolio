@@ -49,7 +49,6 @@ document.addEventListener("scroll", () => {
 
 
 // PARAGRAPH CHANGER
-
 // constant for the paragraph
 const homeP = document.querySelector(".home");
 const aboutMeP = document.querySelector(".aboutMe");
